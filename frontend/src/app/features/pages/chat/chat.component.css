@@ -1,0 +1,21 @@
+.answer{
+    position: absolute;
+    right: 5px;
+    top: -12px;
+    padding-inline: 2px ;
+    background:#F0F8FF;
+}
+.answerInput{
+    outline-color:transparent ;
+    border: 3px solid rgba(128, 128, 128, 0.29);
+    padding-block: 30px;
+
+}
+.sound{
+    align-self: center;
+}
+.icon{
+    transform: translateY(37px);
+    color: aliceblue;
+    right: 10px;
+}

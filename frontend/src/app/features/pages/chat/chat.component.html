@@ -1,0 +1,21 @@
+<!-- Modal toggle -->
+<div class="w-2/3 mx-auto flex flex-col  space-y-6 ">
+    <p class="font-bold text-center"> الذكاء الاصطناعي</p>
+
+    <div class="relative bg-slate-800">
+        <input type="text" class="w-full answerInput " name="answer" id="answer" [placeholder]="answerText ? answerText :'الإجابة عن سؤالك تظهر هنا ... يمكنك الاستماع إليها ' ">
+        <label class="answer" for="answer" [(ngModel)]="answerText">الإجابة</label>
+    </div>
+    <button (click)="speakAnswer()" class="sound px-3 py-2  rounded font-bold  text-white bg-[#38A7B4]">الاستماع الإجابة</button>
+    <div class="flex items-center space-y-6  flex-col">
+        <div class="flex flex-col relative">
+         <label for="quiestion">ادخل سؤالك</label>
+         <input [(ngModel)]="questionText" type="text" class="rounded-lg bg-black text-gray-400 text-left" placeholder="أكتب هنا" name="quiestion" id="quiestion">
+         <div class=" absolute icon flex gap-4">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-check"></i>
+         </div>
+        </div>
+         <button (click)="submitQuestion()" class="px-3 py-2 rounded font-bold  text-white bg-[#38A7B4]">إرسال</button>
+     </div>
+</div>
